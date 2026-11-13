@@ -1,0 +1,243 @@
+{
+  "B200_run_claimed": false,
+  "GPU_included": false,
+  "additional_files": [
+    "setup_assets.py",
+    "TEAM.json",
+    "README.md",
+    ".gitignore",
+    "VALIDATED_ARCHIVE_MANIFEST.json",
+    "publication_manifest.json"
+  ],
+  "bootstrap_validation": {
+    "checks_at_rebuild": [
+      "known circuit hash",
+      "70-detector/4-logical model",
+      "21/14/14/21-bit region dimensions",
+      "finite masses",
+      "unit probability normalizers",
+      "signed mass bounds"
+    ],
+    "full_rebuild_run": false,
+    "network_access_required": false,
+    "static_review_only": true
+  },
+  "changes_to_validated_runtime": [
+    "decoder.py: invoke offline boundary bootstrap before organizer import; expose bootstrap metadata"
+  ],
+  "files": {
+    ".gitignore": {
+      "bytes": 55,
+      "encoding": "UTF-8",
+      "sha256": "4d85295735329d93970b2088cb0133c7e4bef5ab503b601a2765d84807c99e3d",
+      "text_only": true
+    },
+    "README.md": {
+      "bytes": 3041,
+      "encoding": "UTF-8",
+      "sha256": "f703cc5ba26a03c1c30fe9d8ae831b13e5a3a30d3713606be072f5e730e6d102",
+      "text_only": true
+    },
+    "TEAM.json": {
+      "bytes": 224,
+      "encoding": "UTF-8",
+      "sha256": "01f18cf9c89b930b180e0d40b5f533f40830f628241bca228501bb4d26bee8ac",
+      "text_only": true
+    },
+    "VALIDATED_ARCHIVE_MANIFEST.json": {
+      "bytes": 8269,
+      "encoding": "UTF-8",
+      "sha256": "aa4bc7827e56bdedfa7cac9562ded514711e3c8ad311932dd2e45a26fc66dab4",
+      "text_only": true
+    },
+    "adaptive_row_store.py": {
+      "bytes": 26740,
+      "encoding": "UTF-8",
+      "sha256": "9241506379a8a12221333c73d635da807de92087a139a39df12cd6900ff1d5ba",
+      "text_only": true
+    },
+    "adaptive_tensor_decoder.py": {
+      "bytes": 29133,
+      "encoding": "UTF-8",
+      "sha256": "3452eec6194e59e7b0d1c1d386c379212a7de7f4cf439e556461e411203d3715",
+      "text_only": true
+    },
+    "data/competition/X_circuit.stim": {
+      "bytes": 11279,
+      "encoding": "UTF-8",
+      "sha256": "69d15cce609f60a7b45af88ec0a6f52b47d1fc5f08f39785fa18f50f1e47e5db",
+      "text_only": true
+    },
+    "data/competition/Z_circuit.stim": {
+      "bytes": 10790,
+      "encoding": "UTF-8",
+      "sha256": "2f20016bcc3d66bfdfae5a03685806f2355d6d2a4100a131e7a6999f672bc282",
+      "text_only": true
+    },
+    "decoder.py": {
+      "bytes": 1040,
+      "encoding": "UTF-8",
+      "sha256": "173eeabc31bb6663bb7e12f8181d57e0c47690bc41763be98e0beff43eba26ed",
+      "text_only": true
+    },
+    "diagnostics/__init__.py": {
+      "bytes": 64,
+      "encoding": "UTF-8",
+      "sha256": "e8dda53d86ce43ff6c55c72e189082611e6e036b2296012859e625517488b176",
+      "text_only": true
+    },
+    "diagnostics/adaptive_cached_kernels.py": {
+      "bytes": 15291,
+      "encoding": "UTF-8",
+      "sha256": "ea4fa151a559b06568d68812f9b8a8e97f50fa99434b79265a3d4a33114bc1a4",
+      "text_only": true
+    },
+    "diagnostics/boundary21_tables.py": {
+      "bytes": 8586,
+      "encoding": "UTF-8",
+      "sha256": "b1fb07267ad3e9a80ea1945a608ece71f0d68d3c653f674d25f113a910b1ffcc",
+      "text_only": true
+    },
+    "diagnostics/boundary_probe.py": {
+      "bytes": 13810,
+      "encoding": "UTF-8",
+      "sha256": "510293c1af1d9a9ff700c6c8a6a6b9b280a3c2aaa209773b76696612ecbf8cbd",
+      "text_only": true
+    },
+    "diagnostics/compiled_row_memory.py": {
+      "bytes": 6999,
+      "encoding": "UTF-8",
+      "sha256": "3aff3a4777e596dfb911d6a7c6a33d8bb144ccc2ac88a5f6196e4e8de5241fa1",
+      "text_only": true
+    },
+    "diagnostics/precompute_adaptive_rows.py": {
+      "bytes": 1209,
+      "encoding": "UTF-8",
+      "sha256": "b57ad72bfb41a02b92b08695ef7a5e09aff96f11c70354b39aa0c661aed2c279",
+      "text_only": true
+    },
+    "diagnostics/temporal_chain.py": {
+      "bytes": 12775,
+      "encoding": "UTF-8",
+      "sha256": "47ab2d27bd52b2e3d612f30d009c8001564a4207b96407ca056c2ecf090ca03e",
+      "text_only": true
+    },
+    "diagnostics/temporal_factor_probe.py": {
+      "bytes": 9851,
+      "encoding": "UTF-8",
+      "sha256": "60ff2df13a9702845c664489a09db86e2f19f4db9a4994bd68420bb508718874",
+      "text_only": true
+    },
+    "diagnostics/temporal_structure.py": {
+      "bytes": 16135,
+      "encoding": "UTF-8",
+      "sha256": "73732f94f8c2ff48ce19af76361ebfce963bb0b53d81a8e6b8b72b8d8717fb35",
+      "text_only": true
+    },
+    "diagnostics/tensor_environment_tail.py": {
+      "bytes": 11712,
+      "encoding": "UTF-8",
+      "sha256": "a54d7494097e88321ac5cc824ea6cf1d03780ff304c849d0f6204f7635a0f5b8",
+      "text_only": true
+    },
+    "diagnostics/tensor_fast_chain.py": {
+      "bytes": 22006,
+      "encoding": "UTF-8",
+      "sha256": "d6c962307ddc79b04a44153f138b6054d625ec8e86936d5b906eeb6002598921",
+      "text_only": true
+    },
+    "diagnostics/tensor_full_edge.py": {
+      "bytes": 30070,
+      "encoding": "UTF-8",
+      "sha256": "c8c85782a0a22c29e89f8b52ad065fbd02f02354ce7f323a25c9cfad1a9a4d07",
+      "text_only": true
+    },
+    "diagnostics/tensor_partial_cache.py": {
+      "bytes": 18495,
+      "encoding": "UTF-8",
+      "sha256": "8d01862e8c86243ea6c7770aff3ee61836af7a72f4b944d9d90102856cd6c325",
+      "text_only": true
+    },
+    "diagnostics/tensor_sliced_chain.py": {
+      "bytes": 12935,
+      "encoding": "UTF-8",
+      "sha256": "ac807070c6d6f3aad53f2bed41b2f0e36c53ffd773a5c4a6750d0299452e18ad",
+      "text_only": true
+    },
+    "diagnostics/tensor_structure.py": {
+      "bytes": 9406,
+      "encoding": "UTF-8",
+      "sha256": "e20e2029ff803e5bae97503ea50aacf5be0ee30fa564d4ef6193f9c718b3cf68",
+      "text_only": true
+    },
+    "fallback.py": {
+      "bytes": 4784,
+      "encoding": "UTF-8",
+      "sha256": "ece25578eda7442d6bb84e8bf1cd7636d17845c7fd7d73638c5142247c29802c",
+      "text_only": true
+    },
+    "organizer_decoder.py": {
+      "bytes": 25808,
+      "encoding": "UTF-8",
+      "sha256": "430baa52870ae1bd16076423737b70a3ddc268fbacb67619328ace24a479bad6",
+      "text_only": true
+    },
+    "prior_model.py": {
+      "bytes": 25848,
+      "encoding": "UTF-8",
+      "sha256": "321c1c0a322bfe31352d7b25ff6b3073d0a2676d57c9b116a411a5b128216a7c",
+      "text_only": true
+    },
+    "probability_decoder.py": {
+      "bytes": 3214,
+      "encoding": "UTF-8",
+      "sha256": "23d22ceb743facd40115cc4eb2a8e7161845199abff2dcaf87636115864a31fb",
+      "text_only": true
+    },
+    "requirements.txt": {
+      "bytes": 40,
+      "encoding": "UTF-8",
+      "sha256": "5f2b9c40efd1dfe7be95290dc2301b175596a1e2bbb5e87ff8b4a54b35d0dce1",
+      "text_only": true
+    },
+    "setup_assets.py": {
+      "bytes": 6531,
+      "encoding": "UTF-8",
+      "sha256": "a5529d9af3ad6cbd0b83cc1f2cfe62469ea29f93ace1d8d9109d9b71b0749679",
+      "text_only": true
+    }
+  },
+  "inventory_excludes_self": true,
+  "labels_or_saved_predictions_included": false,
+  "omitted_assets": {
+    "data/target03/boundary21_X.npz": {
+      "bytes": 152448867,
+      "reason": "Exceeds GitHub file limit; rebuilt offline by setup_assets.py",
+      "rebuilt_file_byte_identity_required": false,
+      "sha256": "4c0155823f7415985f6c1f18722d464f1ee45e94044b52b24c16ee9779febf51"
+    },
+    "data/target03/boundary21_Z.npz": {
+      "bytes": 151353302,
+      "reason": "Exceeds GitHub file limit; rebuilt offline by setup_assets.py",
+      "rebuilt_file_byte_identity_required": false,
+      "sha256": "20d88b8489fd03764ad5204539436bbf8f7c7795d8f93cfb7e5c94a6b29a19bc"
+    }
+  },
+  "repository_path": "submissions/ducks_are_pretty_cool/adaptive/",
+  "schema": "ducks-adaptive-source-publication-v1",
+  "team": {
+    "backend": "CPU",
+    "gpu_included": false,
+    "kaggle_name": "Ethan Feldman",
+    "profile": "adaptive",
+    "selected_public_score": "0.03370",
+    "selected_submission_ref": 58322820,
+    "team_name": "ducks are pretty cool"
+  },
+  "validated_source_archive": {
+    "CPU_inference_validated": true,
+    "profile": "adaptive",
+    "relative_path": "dist/speed_adaptive_decoder_handin.zip",
+    "sha256": "e5fd79f082cbe8650a9011c37b29af1b7fdedd0a082e5a1d7b50d7096c35cffa"
+  }
+}
